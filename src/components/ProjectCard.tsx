@@ -13,11 +13,13 @@ export default function ProjectCard({ title, description, imageUrl, tags }: Proj
             <div className="card-image-wrapper">
                 {imageUrl ? (
                     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                        {/* Using a simple div instead of Image for now if src is missing to avoid errors, or standard Image */}
-                        <div style={{ width: '100%', height: '100%', background: '#eee', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#ccc' }}>
-                            {/* Fallback visual */}
-                            Image: {imageUrl}
-                        </div>
+                        <Image
+                            src={imageUrl}
+                            alt={title}
+                            fill
+                            style={{ objectFit: 'cover' }}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
                     </div>
                 ) : (
                     <div style={{ width: '100%', height: '100%', background: '#eee' }} />
