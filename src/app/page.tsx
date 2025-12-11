@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container section">
       <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', padding: '6rem 0' }}>
         <h1 style={{ fontSize: '4rem', fontWeight: 800, marginBottom: '1.5rem', lineHeight: 1.1, letterSpacing: '-0.03em' }}>
-          Hi, I&apos;m Alex. <br />
+          Hi, I&apos;m Alexis. <br />
           <span style={{ color: 'var(--primary)' }}>I create stuff.</span>
         </h1>
         <p style={{ fontSize: '1.5rem', color: '#666', marginBottom: '3rem', lineHeight: 1.6 }}>
