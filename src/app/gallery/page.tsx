@@ -17,6 +17,8 @@ export default function GalleryPage() {
                         description={item.description}
                         imageUrl={item.imageUrl}
                         tags={item.tags}
+                        slug={item.slug}
+                        basePath="/gallery"
                     />
                 ))}
             </div>

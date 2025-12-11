@@ -1,15 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProjectCardProps {
     title: string;
     description: string;
     imageUrl?: string;
     tags?: string[];
+    slug: string;
+    basePath: string;
 }
 
-export default function ProjectCard({ title, description, imageUrl, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, description, imageUrl, tags, slug, basePath }: ProjectCardProps) {
     return (
-        <div className="card">
+        <Link href={`${basePath}/${slug}`} className="card">
             <div className="card-image-wrapper">
                 {imageUrl ? (
                     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
@@ -38,6 +41,6 @@ export default function ProjectCard({ title, description, imageUrl, tags }: Proj
                     </div>
                 )}
             </div>
-        </div>
+        </Link>
     );
 }
