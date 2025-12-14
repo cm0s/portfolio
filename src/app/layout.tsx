@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   description: "Showcase of my artwork and projects",
 };
 
+import { LanguageProvider } from "@/context/LanguageContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,11 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="main-content">
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <LanguageProvider>
+          <div className="main-content">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   );
