@@ -13,12 +13,12 @@ export default function GalleryDetailClient({ item }: { item: Item }) {
             <Link href="/gallery" className="back-link">{t('common.backToGallery')}</Link>
             <article className="detail-view">
                 <h1 className="detail-title">{item.title[language]}</h1>
-                <div className="detail-image-wrapper">
+                <div className="detail-image-wrapper" style={{ aspectRatio: 'auto', height: 'auto' }}>
                     <Image
                         src={item.imageUrl}
                         alt={item.title[language]}
-                        fill
-                        style={{ objectFit: 'cover' }}
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
                         sizes="(max-width: 1200px) 100vw, 800px"
                     />
                 </div>

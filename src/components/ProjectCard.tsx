@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { StaticImageData } from 'next/image';
+
 interface ProjectCardProps {
     title: string;
     description: string;
-    imageUrl?: string;
+    imageUrl?: string | StaticImageData;
     tags?: string[];
     slug: string;
     basePath: string;
