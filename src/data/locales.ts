@@ -22,7 +22,7 @@ export const translations = {
         "nav.home": "Accueil",
         "nav.gallery": "Galerie",
         "nav.projects": "Projets",
-        "home.greeting": "ex, je suis Alexis.",
+        "home.greeting": "Salut, je suis Alexis.",
         "home.tagline": "Je crée des choses.",
         "home.intro": "Bienvenue sur mon portfolio. Je suis un étudiant de 14 ans passionné par le code, le design et l'art. Ici vous pouvez explorer mes derniers projets et oeuvres.",
         "home.viewProjects": "Voir les projets",
