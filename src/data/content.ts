@@ -4,6 +4,11 @@ import project3 from "@/assets/images/project3.png";
 import art1 from "@/assets/images/art1.png";
 import art2 from "@/assets/images/art2.jpeg";
 import art3 from "@/assets/images/art3.png";
+import art4 from "@/assets/images/art4.jpg";
+import art5 from "@/assets/images/art5.jpg";
+import art6 from "@/assets/images/art6.jpg";
+import art7 from "@/assets/images/art7.jpg";
+import art8 from "@/assets/images/art8.jpg";
 import { StaticImageData } from "next/image";
 
 export interface Item {
@@ -84,5 +89,60 @@ export const artwork: Item[] = [
         imageUrl: art3,
         tags: ["Sketch", "Traditional"],
         slug: "character-sketch"
+    },
+    {
+        id: 4,
+        title: { en: "Artwork 4", fr: "Oeuvre 4" },
+        description: {
+            en: "A beautiful addition to the collection.",
+            fr: "Une belle addition à la collection."
+        },
+        imageUrl: art4,
+        tags: ["Art", "New"],
+        slug: "artwork-4"
+    },
+    {
+        id: 5,
+        title: { en: "Artwork 5", fr: "Oeuvre 5" },
+        description: {
+            en: "Exploring new styles and techniques.",
+            fr: "Exploration de nouveaux styles et techniques."
+        },
+        imageUrl: art5,
+        tags: ["Experiment", "Abstract"],
+        slug: "artwork-5"
+    },
+    {
+        id: 6,
+        title: { en: "Artwork 6", fr: "Oeuvre 6" },
+        description: {
+            en: "Vibrant colors and dynamic composition.",
+            fr: "Couleurs vibrantes et composition dynamique."
+        },
+        imageUrl: art6,
+        tags: ["Vibrant", "Composition"],
+        slug: "artwork-6"
+    },
+    {
+        id: 7,
+        title: { en: "Artwork 7", fr: "Oeuvre 7" },
+        description: {
+            en: "A study of light and shadow.",
+            fr: "Une étude de la lumière et de l'ombre."
+        },
+        imageUrl: art7,
+        tags: ["Study", "Light"],
+        slug: "artwork-7"
+    },
+    {
+        id: 8,
+        title: { en: "Artwork 8", fr: "Oeuvre 8" },
+        description: {
+            en: "Final piece of the current series.",
+            fr: "Pièce finale de la série actuelle."
+        },
+        imageUrl: art8,
+        tags: ["Series", "Final"],
+        slug: "artwork-8"
     }
 ];
