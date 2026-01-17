@@ -59,90 +59,90 @@ export const projects: Item[] = [
 export const artwork: Item[] = [
     {
         id: 1,
-        title: { en: "Sunset Valley", fr: "Valée au Coucher du Soleil" },
+        title: { en: "Masked Guardian", fr: "Gardien Masqué" },
         description: {
-            en: "Acrylic painting on canvas highlighting warm colors.",
-            fr: "Peinture acrylique sur toile mettant en valeur les couleurs chaudes."
+            en: "A character with a metal box mask holding a magical staff.",
+            fr: "Un personnage avec un masque en boîte métallique tenant un bâton magique."
         },
         imageUrl: art1,
-        tags: ["Painting", "Acrylic"],
-        slug: "sunset-valley"
+        tags: ["Fantasy", "Illustration"],
+        slug: "masked-guardian"
     },
     {
         id: 2,
-        title: { en: "Cyberpunk City", fr: "Ville Cyberpunk" },
+        title: { en: "Pink Gunner", fr: "Tireur Rose" },
         description: {
-            en: "Digital concept art created in Blender.",
-            fr: "Concept art numérique créé dans Blender."
+            en: "Stylized character in pink attire holding a futuristic weapon.",
+            fr: "Personnage stylisé en tenue rose tenant une arme futuriste."
         },
         imageUrl: art2,
-        tags: ["3D", "Blender"],
-        slug: "cyberpunk-city"
+        tags: ["Digital Art", "Stylized"],
+        slug: "pink-gunner"
     },
     {
         id: 3,
-        title: { en: "Character Sketch", fr: "Croquis de Personnage" },
+        title: { en: "Coffee Gojo", fr: "Gojo au Café" },
         description: {
-            en: "Pencil sketch of a fantasy character.",
-            fr: "Croquis au crayon d'un personnage fantastique."
+            en: "Fan art of Gojo Satoru created with coffee painting techniques.",
+            fr: "Fan art de Gojo Satoru créé avec des techniques de peinture au café."
         },
         imageUrl: art3,
-        tags: ["Sketch", "Traditional"],
-        slug: "character-sketch"
+        tags: ["Fan Art", "Coffee Painting", "Jujutsu Kaisen"],
+        slug: "coffee-gojo"
     },
     {
         id: 4,
-        title: { en: "Artwork 4", fr: "Oeuvre 4" },
+        title: { en: "Urban Duo", fr: "Duo Urbain" },
         description: {
-            en: "A beautiful addition to the collection.",
-            fr: "Une belle addition à la collection."
+            en: "Two stylized characters in streetwear, featuring a jersey with number 10.",
+            fr: "Deux personnages stylisés en streetwear, avec un maillot portant le numéro 10."
         },
         imageUrl: art4,
-        tags: ["Art", "New"],
-        slug: "artwork-4"
+        tags: ["Streetwear", "Character Design"],
+        slug: "urban-duo"
     },
     {
         id: 5,
-        title: { en: "Artwork 5", fr: "Oeuvre 5" },
+        title: { en: "Zenitsu Agatsuma", fr: "Zenitsu Agatsuma" },
         description: {
-            en: "Exploring new styles and techniques.",
-            fr: "Exploration de nouveaux styles et techniques."
+            en: "Fan art of Zenitsu from Demon Slayer dealing a thunderous strike.",
+            fr: "Fan art de Zenitsu de Demon Slayer portant un coup de tonnerre."
         },
         imageUrl: art5,
-        tags: ["Experiment", "Abstract"],
-        slug: "artwork-5"
+        tags: ["Fan Art", "Anime", "Demon Slayer"],
+        slug: "zenitsu-agatsuma"
     },
     {
         id: 6,
-        title: { en: "Artwork 6", fr: "Oeuvre 6" },
+        title: { en: "Striker Number 10", fr: "Attaquant Numéro 10" },
         description: {
-            en: "Vibrant colors and dynamic composition.",
-            fr: "Couleurs vibrantes et composition dynamique."
+            en: "A vibrant character portrait wearing a green vest and pink shorts.",
+            fr: "Un portrait de personnage vibrant portant un gilet vert et un short rose."
         },
         imageUrl: art6,
-        tags: ["Vibrant", "Composition"],
-        slug: "artwork-6"
+        tags: ["Sports", "Character Art"],
+        slug: "striker-number-10"
     },
     {
         id: 7,
-        title: { en: "Artwork 7", fr: "Oeuvre 7" },
+        title: { en: "Ronin Sketch", fr: "Croquis de Ronin" },
         description: {
-            en: "A study of light and shadow.",
-            fr: "Une étude de la lumière et de l'ombre."
+            en: "Dynamic pencil sketch of a swordsman with blue ink accents.",
+            fr: "Croquis dynamique au crayon d'un épéiste avec des accents d'encre bleue."
         },
         imageUrl: art7,
-        tags: ["Study", "Light"],
-        slug: "artwork-7"
+        tags: ["Sketch", "Ink"],
+        slug: "ronin-sketch"
     },
     {
         id: 8,
-        title: { en: "Artwork 8", fr: "Oeuvre 8" },
+        title: { en: "Chibi Deadpool", fr: "Chibi Deadpool" },
         description: {
-            en: "Final piece of the current series.",
-            fr: "Pièce finale de la série actuelle."
+            en: "Playful graffiti-style art featuring a mini Deadpool.",
+            fr: "Art style graffiti ludique mettant en vedette un mini Deadpool."
         },
         imageUrl: art8,
-        tags: ["Series", "Final"],
-        slug: "artwork-8"
+        tags: ["Fan Art", "Graffiti", "Marvel"],
+        slug: "chibi-deadpool"
     }
 ];

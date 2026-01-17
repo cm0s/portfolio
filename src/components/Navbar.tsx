@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-content">
         <Link href="/" className="logo">
-          Portfolio
+          Alexis' Portfolio
         </Link>
         <ul className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <li><Link href="/">{t('nav.home')}</Link></li>
