@@ -15,7 +15,8 @@ export interface Item {
     id: number;
     title: { en: string; fr: string };
     description: { en: string; fr: string };
-    imageUrl: string | StaticImageData;
+    imageUrl?: string | StaticImageData;
+    videoUrl?: string;
     tags?: string[];
     slug: string;
 }
@@ -23,36 +24,14 @@ export interface Item {
 export const projects: Item[] = [
     {
         id: 1,
-        title: { en: "Space Invaders Clone", fr: "Clone de Space Invaders" },
+        title: { en: "Stop Motion Animation", fr: "Animation Stop Motion" },
         description: {
-            en: "A classic arcade game recreation built with Python and Pygame. Features scoring, multiple levels, and sound effects.",
-            fr: "Une recréation du jeu d'arcade classique construite avec Python et Pygame. Inclut scores, multiples niveaux et effets sonores."
+            en: "A creative stop motion video animation.",
+            fr: "Une vidéo d'animation créative en stop motion."
         },
-        imageUrl: project1,
-        tags: ["Python", "Game Dev"],
-        slug: "space-invaders"
-    },
-    {
-        id: 2,
-        title: { en: "School Website", fr: "Site Web de l'École" },
-        description: {
-            en: "A mockup website for my school's science club. Built with HTML and CSS.",
-            fr: "Une maquette de site web pour le club de science de mon école. Construit avec HTML et CSS."
-        },
-        imageUrl: project2,
-        tags: ["Web", "HTML/CSS"],
-        slug: "school-website"
-    },
-    {
-        id: 3,
-        title: { en: "Weather Station", fr: "Station Météo" },
-        description: {
-            en: "Arduino-based weather station that tracks temperature and humidity.",
-            fr: "Station météo basée sur Arduino qui suit la température et l'humidité."
-        },
-        imageUrl: project3,
-        tags: ["Arduino", "Electronics"],
-        slug: "weather-station"
+        videoUrl: "/videos/stop-motion.mp4",
+        tags: ["Video", "Stop Motion"],
+        slug: "stop-motion"
     }
 ];
 

@@ -21,6 +21,7 @@ export default function ProjectsPage() {
                         title={item.title[language]}
                         description={item.description[language]}
                         imageUrl={item.imageUrl}
+                        videoUrl={item.videoUrl}
                         tags={item.tags}
                         slug={item.slug}
                         basePath="/projects"
