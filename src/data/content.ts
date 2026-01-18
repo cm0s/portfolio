@@ -2,6 +2,7 @@ import project1 from "@/assets/images/project1.png";
 import project2 from "@/assets/images/project2.png";
 import project3 from "@/assets/images/project3.png";
 import art1 from "@/assets/images/art1.png";
+import projectStopMotion from "@/assets/images/project_stop_motion.png";
 import art2 from "@/assets/images/art2.jpeg";
 import art3 from "@/assets/images/art3.png";
 import art4 from "@/assets/images/art4.jpg";
@@ -29,6 +30,7 @@ export const projects: Item[] = [
             en: "A creative stop motion video animation.",
             fr: "Une vidéo d'animation créative en stop motion."
         },
+        imageUrl: projectStopMotion,
         videoUrl: "/videos/stop-motion.mp4",
         tags: ["Video", "Stop Motion"],
         slug: "stop-motion"

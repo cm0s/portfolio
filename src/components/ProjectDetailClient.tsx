@@ -14,15 +14,7 @@ export default function ProjectDetailClient({ project }: { project: Item }) {
             <article className="detail-view">
                 <h1 className="detail-title">{project.title[language]}</h1>
                 <div className="detail-image-wrapper">
-                    {project.imageUrl ? (
-                        <Image
-                            src={project.imageUrl}
-                            alt={project.title[language]}
-                            fill
-                            style={{ objectFit: 'cover' }}
-                            sizes="(max-width: 1200px) 100vw, 800px"
-                        />
-                    ) : project.videoUrl ? (
+                    {project.videoUrl ? (
                         <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
                             <video
                                 src={project.videoUrl}
@@ -30,6 +22,14 @@ export default function ProjectDetailClient({ project }: { project: Item }) {
                                 style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
                             />
                         </div>
+                    ) : project.imageUrl ? (
+                        <Image
+                            src={project.imageUrl}
+                            alt={project.title[language]}
+                            fill
+                            style={{ objectFit: 'cover' }}
+                            sizes="(max-width: 1200px) 100vw, 800px"
+                        />
                     ) : null}
                 </div>
                 <div className="detail-content">
