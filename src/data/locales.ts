@@ -14,7 +14,7 @@ export const translations = {
         "projects.title": "My Projects",
         "projects.desc": "Showcase of my diverse projects.",
         "gallery.title": "My Drawings",
-        "gallery.desc": "A collection of my drawings, paintings, and digital art.",
+        "gallery.desc": "A collection of my drawings and digital art.",
         "common.backToProjects": "← Back to Projects",
         "common.backToGallery": "← Back to Gallery",
     },
@@ -31,7 +31,7 @@ export const translations = {
         "projects.title": "Mes Projets",
         "projects.desc": "Présentation de mes projets divers.",
         "gallery.title": "Mes dessins",
-        "gallery.desc": "Une collection de mes dessins, peintures et arts numériques.",
+        "gallery.desc": "Une collection de mes dessins et arts numériques.",
         "common.backToProjects": "← Retour aux projets",
         "common.backToGallery": "← Retour à la galerie",
     }
