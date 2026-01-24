@@ -48,7 +48,7 @@ export default function ProjectCard({ title, description, imageUrl, videoUrl, ta
                 {tags && (
                     <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
                         {tags.map(tag => (
-                            <span key={tag} style={{ fontSize: '0.75rem', background: '#f0f0f0', padding: '0.25rem 0.5rem', borderRadius: '4px', color: '#555' }}>
+                            <span key={tag} className="tag">
                                 {tag}
                             </span>
                         ))}
