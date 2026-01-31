@@ -18,11 +18,11 @@ export default function Home() {
           {t('home.intro')}
         </p>
         <div className="hero-buttons">
-          <Link href="/projects" className="btn">
-            {t('home.viewProjects')}
-          </Link>
-          <Link href="/gallery" className="btn btn-secondary">
+          <Link href="/gallery" className="btn">
             {t('home.seeArtwork')}
+          </Link>
+          <Link href="/projects" className="btn btn-secondary">
+            {t('home.viewProjects')}
           </Link>
         </div>
       </div>

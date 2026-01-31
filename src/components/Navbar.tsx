@@ -2,11 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const { t } = useLanguage();
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const toggleMenu = () => {
@@ -15,6 +17,14 @@ export default function Navbar() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  // Check if a path is active (handles both exact matches and child routes)
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(path);
   };
 
   // Prevent scrolling when menu is open
@@ -44,9 +54,9 @@ export default function Navbar() {
         </button>
 
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><Link href="/" onClick={closeMenu}>{t('nav.home')}</Link></li>
-          <li><Link href="/gallery" onClick={closeMenu}>{t('nav.gallery')}</Link></li>
-          <li><Link href="/projects" onClick={closeMenu}>{t('nav.projects')}</Link></li>
+          <li><Link href="/" className={isActive('/') ? 'active' : ''} onClick={closeMenu}>{t('nav.home')}</Link></li>
+          <li><Link href="/gallery" className={isActive('/gallery') ? 'active' : ''} onClick={closeMenu}>{t('nav.gallery')}</Link></li>
+          <li><Link href="/projects" className={isActive('/projects') ? 'active' : ''} onClick={closeMenu}>{t('nav.projects')}</Link></li>
           <li><LanguageSwitcher /></li>
         </ul>
       </div>
