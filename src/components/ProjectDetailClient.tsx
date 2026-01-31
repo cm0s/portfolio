@@ -14,7 +14,20 @@ export default function ProjectDetailClient({ project }: { project: Item }) {
             <article className="detail-view">
                 <h1 className="detail-title">{project.title[language]}</h1>
                 <div className="detail-image-wrapper">
-                    {project.videoUrl ? (
+                    {project.youtubeId ? (
+                        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                                title={project.title[language]}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                                style={{ border: 'none' }}
+                            />
+                        </div>
+                    ) : project.videoUrl ? (
                         <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
                             <video
                                 src={project.videoUrl}

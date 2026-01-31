@@ -3,6 +3,7 @@ import project2 from "@/assets/images/project2.png";
 import project3 from "@/assets/images/project3.png";
 import art1 from "@/assets/images/art1.jpg";
 import projectStopMotion from "@/assets/images/project_stop_motion.png";
+import projectOnePiece from "@/assets/images/project_one_piece.jpg";
 import art2 from "@/assets/images/art2.jpeg";
 import art3 from "@/assets/images/art3.png";
 import art4 from "@/assets/images/art4.jpg";
@@ -18,6 +19,7 @@ export interface Item {
     description: { en: string; fr: string };
     imageUrl?: string | StaticImageData;
     videoUrl?: string;
+    youtubeId?: string;
     tags?: string[];
     slug: string;
 }
@@ -34,6 +36,18 @@ export const projects: Item[] = [
         videoUrl: "/videos/stop-motion.mp4",
         tags: ["Video", "Stop Motion"],
         slug: "stop-motion"
+    },
+    {
+        id: 2,
+        title: { en: "One Piece Fan Edit", fr: "Montage One Piece" },
+        description: {
+            en: "A fan-made video edit celebrating the legendary anime One Piece.",
+            fr: "Un montage vidéo fait par fan célébrant le légendaire anime One Piece."
+        },
+        imageUrl: projectOnePiece,
+        youtubeId: "3bM_cWnEDyo",
+        tags: ["Video", "Anime", "One Piece"],
+        slug: "one-piece-edit"
     }
 ];
 
