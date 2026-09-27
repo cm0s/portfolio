@@ -11,6 +11,8 @@ import art5 from "@/assets/images/art5.jpg";
 import art6 from "@/assets/images/art6.jpg";
 import art7 from "@/assets/images/art7.jpg";
 import art8 from "@/assets/images/art8.jpg";
+import art9 from "@/assets/images/art9.jpeg";
+import art10 from "@/assets/images/art10.jpeg";
 import { StaticImageData } from "next/image";
 
 export interface Item {
@@ -53,28 +55,6 @@ export const projects: Item[] = [
 
 export const artwork: Item[] = [
     {
-        id: 1,
-        title: { en: "Masked Guardian", fr: "Gardien Masqué" },
-        description: {
-            en: "A character with a metal box mask holding a magical staff.",
-            fr: "Un personnage avec un masque en boîte métallique tenant un bâton magique."
-        },
-        imageUrl: art1,
-        tags: ["Fantasy", "Illustration"],
-        slug: "masked-guardian"
-    },
-    {
-        id: 2,
-        title: { en: "Pink Gunner", fr: "Tireur Rose" },
-        description: {
-            en: "Stylized character in pink attire holding a futuristic weapon.",
-            fr: "Personnage stylisé en tenue rose tenant une arme futuriste."
-        },
-        imageUrl: art2,
-        tags: ["Digital Art", "Stylized"],
-        slug: "pink-gunner"
-    },
-    {
         id: 3,
         title: { en: "Coffee Gojo", fr: "Gojo au Café" },
         description: {
@@ -84,17 +64,6 @@ export const artwork: Item[] = [
         imageUrl: art3,
         tags: ["Fan Art", "Coffee Painting", "Jujutsu Kaisen"],
         slug: "coffee-gojo"
-    },
-    {
-        id: 4,
-        title: { en: "Urban Duo", fr: "Duo Urbain" },
-        description: {
-            en: "Two stylized characters in streetwear, featuring a jersey with number 10.",
-            fr: "Deux personnages stylisés en streetwear, avec un maillot portant le numéro 10."
-        },
-        imageUrl: art4,
-        tags: ["Streetwear", "Character Design"],
-        slug: "urban-duo"
     },
     {
         id: 5,
@@ -107,37 +76,38 @@ export const artwork: Item[] = [
         tags: ["Fan Art", "Anime", "Demon Slayer"],
         slug: "zenitsu-agatsuma"
     },
-    {
-        id: 6,
-        title: { en: "Striker Number 10", fr: "Attaquant Numéro 10" },
-        description: {
-            en: "A vibrant character portrait wearing a green vest and pink shorts.",
-            fr: "Un portrait de personnage vibrant portant un gilet vert et un short rose."
-        },
-        imageUrl: art6,
-        tags: ["Sports", "Character Art"],
-        slug: "striker-number-10"
-    },
-    {
-        id: 7,
-        title: { en: "Ronin Sketch", fr: "Croquis de Ronin" },
-        description: {
-            en: "Dynamic pencil sketch of a swordsman with blue ink accents.",
-            fr: "Croquis dynamique au crayon d'un épéiste avec des accents d'encre bleue."
-        },
-        imageUrl: art7,
-        tags: ["Sketch", "Ink"],
-        slug: "ronin-sketch"
-    },
+
     {
         id: 8,
         title: { en: "Chibi Deadpool", fr: "Chibi Deadpool" },
         description: {
-            en: "Playful graffiti-style art featuring a mini Deadpool.",
+             en: "Playful graffiti-style art featuring a mini Deadpool.",
             fr: "Art style graffiti ludique mettant en vedette un mini Deadpool."
         },
         imageUrl: art8,
         tags: ["Fan Art", "Graffiti", "Marvel"],
         slug: "chibi-deadpool"
+    },
+    {
+        id: 9,
+        title: { en: "Japanese Village", fr: "Village Japonais" },
+        description: {
+            en: "A quiet Japanese village at sunset, its river crossed by a stone bridge, created with Procreate.",
+            fr: "Un paisible village japonais au coucher du soleil, sa rivière traversée par un pont de pierre, réalisé avec Procreate."
+        },
+        imageUrl: art9,
+        tags: ["Illustration", "Procreate", "Landscape"],
+        slug: "japanese-village"
+    },
+    {
+        id: 10,
+        title: { en: "Road Trip", fr: "Road Trip" },
+        description: {
+            en: "An overloaded bus speeding through the countryside at sunset, created with Procreate.",
+            fr: "Un bus surchargé fonçant à travers la campagne au coucher du soleil, réalisé avec Procreate."
+        },
+        imageUrl: art10,
+        tags: ["Illustration", "Procreate", "Cartoon"],
+        slug: "road-trip"
     }
 ];
