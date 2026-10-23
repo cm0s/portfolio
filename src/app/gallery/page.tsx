@@ -21,6 +21,7 @@ export default function GalleryPage() {
                         title={item.title[language]}
                         description={item.description[language]}
                         imageUrl={item.imageUrl}
+                        isVideo={!!(item.youtubeId || item.videoUrl)}
                         tags={item.tags}
                         slug={item.slug}
                         basePath="/gallery"

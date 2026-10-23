@@ -17,7 +17,19 @@ export default function GalleryDetailClient({ item }: { item: Item }) {
             <article className="detail-view">
                 <h1 className="detail-title">{item.title[language]}</h1>
                 <div className="detail-image-wrapper" style={{ aspectRatio: 'auto', height: 'auto', overflow: 'hidden' }}>
-                    {item.imageUrl && (
+                    {item.youtubeId ? (
+                        <div style={{ width: '100%', aspectRatio: '9 / 16', maxHeight: '80vh', margin: '0 auto', background: '#000' }}>
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                                title={item.title[language]}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                                style={{ border: 'none' }}
+                            />
+                        </div>
+                    ) : item.imageUrl && (
                         <Image
                             src={item.imageUrl}
                             alt={item.title[language]}

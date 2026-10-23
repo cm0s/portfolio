@@ -8,12 +8,13 @@ interface ProjectCardProps {
     description: string;
     imageUrl?: string | StaticImageData;
     videoUrl?: string;
+    isVideo?: boolean;
     tags?: string[];
     slug: string;
     basePath: string;
 }
 
-export default function ProjectCard({ title, description, imageUrl, videoUrl, tags, slug, basePath }: ProjectCardProps) {
+export default function ProjectCard({ title, description, imageUrl, videoUrl, isVideo, tags, slug, basePath }: ProjectCardProps) {
     return (
         <Link href={`${basePath}/${slug}`} className="card">
             <div className="card-image-wrapper">
@@ -40,6 +41,14 @@ export default function ProjectCard({ title, description, imageUrl, videoUrl, ta
                     </div>
                 ) : (
                     <div style={{ width: '100%', height: '100%', background: '#eee' }} />
+                )}
+                {isVideo && (
+                    <>
+                        <span className="card-play-badge" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                        </span>
+                        <span className="card-video-label">Video</span>
+                    </>
                 )}
             </div>
             <div className="card-content">

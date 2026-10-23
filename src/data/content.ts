@@ -4,6 +4,7 @@ import project3 from "@/assets/images/project3.png";
 import art1 from "@/assets/images/art1.jpg";
 import projectStopMotion from "@/assets/images/project_stop_motion.png";
 import projectOnePiece from "@/assets/images/project_one_piece.jpg";
+import projectShort from "@/assets/images/project_short.jpg";
 import art2 from "@/assets/images/art2.jpeg";
 import art3 from "@/assets/images/art3.png";
 import art4 from "@/assets/images/art4.jpg";
@@ -109,5 +110,17 @@ export const artwork: Item[] = [
         imageUrl: art10,
         tags: ["Illustration", "Procreate", "Cartoon"],
         slug: "road-trip"
+    },
+    {
+        id: 11,
+        title: { en: "Knight Time-lapse", fr: "Time-lapse du Chevalier" },
+        description: {
+            en: "A time-lapse of a knight being drawn on a drawing tablet.",
+            fr: "Un time-lapse du dessin d'un chevalier sur tablette graphique."
+        },
+        imageUrl: projectShort,
+        youtubeId: "lVIEm1CSTRg",
+        tags: ["Time-lapse", "Digital Art", "Knight"],
+        slug: "knight-timelapse"
     }
 ];
